@@ -50,9 +50,9 @@ m.addConstr(x + 2 * y + 3 * z <= 4, "c0")
 ```
 As with variables, constraints are always associated with a specific model. They are created using the Model.addConstr method on the model object.
 Overloaded arithmetic operators are used to build linear expressions. 
-> Overloaded arthimetic operators meaning
-> * used for producing symbolic expression e.g. 2*y -> 2y
-> + used to combine symbolic expressions i.e. x +2y + z
+> Overloaded arthimetic operators meaning    
+> \* used for producing symbolic expression e.g. 2*y -> 2y    
+> \+ used to combine symbolic expressions i.e. x +2y + z
 The comparison operators are also overloaded to make it easier to build constraints e.g. <= used to create a constraint object instead of evaluating a boolean result 
 
 The second argument to Model.addConstr gives the (optional) constraint name.
